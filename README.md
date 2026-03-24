@@ -27,7 +27,7 @@ npm install
 npm run dev
 ```
 
-To change the ip of your vnc server and the password edit the [index.tsx file](https://github.com/conblem/tailvnc/blob/main/pages/index.tsx) in the pages folder.
-Once done open the browser and go to [localhost:3000](http://localhost:3000/) and open your console.
-There should be a message saying "needsLogin" or something similiar, copy the url into a seperate tab and sign in with your tailscale account. 
+Open the browser and go to [localhost:3000](http://localhost:3000/). You will see a connection form where you can enter the **host** (Tailscale IP of your VNC server), **port** (default 5900), and **password** of your VNC server. Click **Connect** to start the session.
+
+Once connected, check your browser console. There may be a message prompting you to authenticate with Tailscale — copy the URL into a separate tab and sign in with your Tailscale account.
 If everything goes as planned you should now see your remote desktop in the browser.
